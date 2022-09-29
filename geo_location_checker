@@ -1,7 +1,7 @@
 let body = $response.body;
 let obj = JSON.parse(body);
 let title = "翻斗大街";
-let subtitle = "翻斗花园2号楼1001室";
+let subtitle = "翻斗花园二号楼1001室";
 let ip = obj['query'];
 let description = '服务商:'+obj['isp'] + '\n'+'地区:' +obj['regionName']+ '\n' + 'IP:'+ obj['query'] + '\n' +'时区:'+ obj['timezone'];
 $done({title, subtitle, ip, description});
